@@ -5,15 +5,143 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aroma</title>
+    <title>Aroma Shop - Home</title>
+    <link rel="icon" type="image/x-icon" href="images/Fevicon.png">
     <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.css">
+    <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-<!--    <link rel="icon" type="image/x-icon" href="">-->
+    <link rel="stylesheet" href="plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
     <script src="bootstrap-5.0.2/js/bootstrap.js"></script>
+    <script src="plugin/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="plugin/OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
+    <script src="js/script.js" async></script>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid p-0">
+    <div class="col-12">
+        <nav class="navbar navbar-expand-lg fixed-top bg-white">
+            <div class="container px-3 px-md-5 px-large p-2">
+                <a href="#" class="navbar-brand"><img src="images/logo.png" alt=""></a>
 
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-lg-auto  mb-lg-0 p-2 p-lg-0">
+                        <li class="nav-item px-lg-2 px-xxl-3 p-1 p-lg-0 active">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-lg-2 px-xxl-3 p-1 p-lg-0">
+                            <a class="nav-link" href="#"> Shop</a>
+                        </li>
+                        <li class="nav-item px-lg-2 px-xxl-3 p-1 p-lg-0 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-lg-2 px-xxl-3 p-1 p-lg-0">
+                            <a class="nav-link" href="#"> Pages</a>
+                        </li>
+                        <li class="nav-item px-lg-2 px-xxl-3 p-1 p-lg-0">
+                            <a class="nav-link" href="#"> Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav nav-shop align-items-center">
+                        <li class="nav-item">
+                            <span class="fas fa-search"></span>
+                        </li>
+                        <li class="nav-item">
+                            <span class="fas fa-cart-flatbed"></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn" href="#">By Now</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <div class="col-12">
+        <section id="banner" class="hero-banner">
+            <div class="container px-3 px-md-5 px-large">
+                <div class="row no-gutters pt-banner align-items-center">
+                    <div class="col-5 d-none d-sm-block ">
+                        <div class="hero-img">
+                            <img class="img-fluid" src="images/hero-banner.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-lg-6 col-xxl-5 offset-lg-1  pl-lg-0 px-0 ps-3">
+                        <div class="hero-banner__content">
+                            <h4>Shop is fun</h4>
+                            <h1>Browse Our Premium Product</h1>
+                            <p>Us which over of signs divide dominion deep fill bring they're meat beho upon own earth
+                                without morning over third. Their male dry. They are great appear whose land fly
+                                grass.</p>
+                            <a class="btn btn-banner" href="#">Browser Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 mt-2">
+        <section class="category">
+            <div class="owl-carousel">
+                <div class="hero-carousel__slide"><img src="images/hero-slide1.png" alt="">
+                    <a href="" class="hero-carousel__btn">
+                        <h3>Wireless Headphone</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </a>
+
+                </div>
+                <div class="hero-carousel__slide"><img src="images/hero-slide2.png" alt="">
+                    <a href="" class="hero-carousel__btn">
+                        <h3>Wireless Headphone</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </a>
+
+                </div>
+                <div class="hero-carousel__slide"><img src="images/hero-slide3.png" alt="">
+                    <a href="" class="hero-carousel__btn">
+                        <h3>Wireless Headphone</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 p-3">
+        <div class="container px-3 px-md-5 px-large p-2">
+            <section class="products_title">
+                <p>Popular Item in the market</p>
+                <h3>Trending Product</h3>
+            </section>
+          <section class="products">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+              </div>
+          </section>
+        </div>
+    </div>
 </div>
 </body>
 </html>
+
