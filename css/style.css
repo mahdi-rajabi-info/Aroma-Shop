@@ -188,7 +188,41 @@ body {
 .hero-carousel__btn h3 {
     font-size: 20px;
 }
+.cards_title{
 
+}
+.cards{
+
+}
+.card{
+    /*position: relative;*/
+}
+.card__content{
+    position: relative;
+}
+.card__button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.card__category{
+    /*padding: 0;*/
+    /*margin: 0;*/
+}
+.card__title{
+    /*padding: 0;*/
+    /*margin: 0;*/
+}
+.card__price{
+
+
+}
+.offer__banner{
+    background: url("../images/parallax-bg.png") right center no-repeat;
+    background-size: cover;
+}
 /*
      responsive
 */
@@ -249,7 +283,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .col-12 > .navbar > .px-large {
+    .col-12 .px-large {
         padding-left: 6rem !important;
         padding-right: 6rem !important;
     }
