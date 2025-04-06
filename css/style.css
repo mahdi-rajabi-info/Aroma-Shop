@@ -222,6 +222,24 @@ body {
 .offer__banner{
     background: url("../images/parallax-bg.png") right center no-repeat;
     background-size: cover;
+    /*padding: 50px 0;*/
+    /*height: 1000px;*/
+}
+.offer__banner__content{
+    padding: 100px 0;
+}
+.offer__banner__title{
+font-size: 35px;
+}
+.offer__banner__sectext{
+
+}
+.offer__banner__text{
+    
+    
+}
+.offer__banner__button{
+
 }
 /*
      responsive
@@ -290,5 +308,5 @@ body {
 }
 
 @media (min-width: 1400px) {
-
+a
 }
