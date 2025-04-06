@@ -34979,7 +34979,7 @@ node:
     pro:
       - family: classic
         style: brands
-  label: Node.js
+  label: Node.script
   search:
     terms: []
   unicode: f419
@@ -34995,7 +34995,7 @@ node-js:
     pro:
       - family: classic
         style: brands
-  label: Node.js JS
+  label: Node.script JS
   search:
     terms: []
   unicode: f3d3
@@ -46094,7 +46094,7 @@ square-instagram:
 square-js:
   aliases:
     names:
-      - js-square
+      - script-square
   changes:
     - 5.0.0
     - 5.0.3
@@ -55048,7 +55048,7 @@ vuejs:
     pro:
       - family: classic
         style: brands
-  label: Vue.js
+  label: Vue.script
   search:
     terms: []
   unicode: f41f

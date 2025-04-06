@@ -33,12 +33,16 @@ body {
     background: none;
 }
 
-.navbar li.nav-item a.nav-link {
-    color: #222;
+.navbar a.nav-link {
+    color: #111;
 }
 
 .navbar li.active a.nav-link {
     color: #384aeb !important;
+}
+
+.dropdown-menu {
+    border: none !important;
 }
 
 /*
@@ -188,38 +192,46 @@ body {
 .hero-carousel__btn h3 {
     font-size: 20px;
 }
-.cards_title{
+
+.cards_title {
 
 }
-.cards{
+
+.cards {
 
 }
-.card{
+
+.card {
     /*position: relative;*/
 }
-.card__content{
+
+.card__content {
     position: relative;
 }
-.card__button{
+
+.card__button {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
 }
 
-.card__category{
+.card__category {
     /*padding: 0;*/
     /*margin: 0;*/
 }
-.card__title{
+
+.card__title {
     /*padding: 0;*/
     /*margin: 0;*/
 }
-.card__price{
+
+.card__price {
 
 
 }
-.offer__banner{
+
+.offer__banner {
     background: url("../images/parallax-bg.png") right center no-repeat;
     background-size: cover;
     /*padding: 50px 0;*/
@@ -241,6 +253,7 @@ font-size: 35px;
 .offer__banner__button{
 
 }
+
 /*
      responsive
 */
@@ -277,6 +290,10 @@ font-size: 35px;
 }
 
 @media (min-width: 992px) {
+    .dropdown-menu {
+        border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    }
+
     .nav-shop .nav-item:last-child a {
         width: 150px;
     }
@@ -302,8 +319,8 @@ font-size: 35px;
 
 @media (min-width: 1200px) {
     .col-12 .px-large {
-        padding-left: 6rem !important;
-        padding-right: 6rem !important;
+        padding-left: 6.5rem !important;
+        padding-right: 6.5rem !important;
     }
 }
 

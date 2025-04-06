@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 					layoutdir: '<%= app.docs.layouts %>/',
 
 					// extensions
-					helpers: '<%= app.docs.src %>/helpers/*.js'
+					helpers: '<%= app.docs.src %>/helpers/*.script'
 				},
 				index: {
 					options: {
@@ -136,10 +136,10 @@ module.exports = function(grunt) {
 
 			jshint: {
 				options: {
-					jshintrc: 'src/js/.jshintrc'
+					jshintrc: 'src/script/.jshintrc'
 				},
 				dist: {
-					src: [ '<%= app.src.scripts %>', 'Gruntfile.js' ]
+					src: [ '<%= app.src.scripts %>', 'Gruntfile.script' ]
 				}
 			},
 
@@ -152,12 +152,12 @@ module.exports = function(grunt) {
 
 			jscs: {
 				options: {
-					config: 'src/js/.jscsrc',
-					reporter: 'text.js',
+					config: 'src/script/.jscsrc',
+					reporter: 'text.script',
 					reporterOutput: 'jscs.report.txt'
 				},
 				dist: {
-					src: [ '<%= app.src.scripts %>', 'Gruntfile.js' ]
+					src: [ '<%= app.src.scripts %>', 'Gruntfile.script' ]
 				}
 			},
 
@@ -206,15 +206,15 @@ module.exports = function(grunt) {
 
 				srcToDocs: {
 					expand: true,
-					cwd: 'src/js',
-					src: [ '**/*.js' ],
+					cwd: 'src/script',
+					src: [ '**/*.script' ],
 					dest: '<%= app.docs.dest %>/assets/owlcarousel/src'
 				},
 
 				docsAssets: {
 					expand: true,
 					cwd: '<%= app.docs.src %>/assets/',
-					src: [ 'css/*.css', 'vendors/*.js', 'vendors/*.map', 'img/*.*', 'js/*.*' ],
+					src: [ 'css/*.css', 'vendors/*.script', 'vendors/*.map', 'img/*.*', 'script/*.*' ],
 					dest: '<%= app.docs.dest %>/assets/'
 				},
 
@@ -259,19 +259,19 @@ module.exports = function(grunt) {
 					tasks: [ 'sass:dist', 'cssmin:dist', 'usebanner:dist', 'copy:distToDocs' ]
 				},
 				jsDocs: {
-					files: [ '<%= app.docs.src %>/assets/**/*.js' ],
+					files: [ '<%= app.docs.src %>/assets/**/*.script' ],
 					tasks: [ 'copy:docsAssets' ]
 				},
 				js: {
-					files: [ 'src/**/*.js' ],
+					files: [ 'src/**/*.script' ],
 					tasks: [ 'jscs:dist', 'jshint:dist', 'qunit:dist', 'concat:dist', 'uglify:dist', 'usebanner:dist', 'copy:distToDocs', 'copy:srcToDocs' ]
 				},
 				helpersDocs: {
-					files: [ '<%= app.docs.src %>/helpers/*.js' ],
+					files: [ '<%= app.docs.src %>/helpers/*.script' ],
 					tasks: [ 'assemble' ]
 				},
 				test: {
-					files: [ 'test/*.html', 'test/unit/*.js' ],
+					files: [ 'test/*.html', 'test/unit/*.script' ],
 					tasks: [ 'qunit:dist' ]
 				}
 			},
